@@ -187,14 +187,14 @@ function bot.init(self)
         password = password
     }
 
-    self.sock:hook('PreRegister',    self.handle_prereg)
-    self.sock:hook('OnNotice',         self.handle_notice)
-    self.sock:hook('OnChat',         self.handle_message)
-    self.sock:hook('OnSend',         self.handle_send)
-    self.sock:hook('OnModeChange',  self.handle_mode_change)
-    self.sock:hook('OnKick',        self.handle_kick)
+    self.sock:hook('PreRegister',  self.handle_prereg)
+    self.sock:hook('OnNotice',     self.handle_notice)
+    self.sock:hook('OnChat',       self.handle_message)
+    self.sock:hook('OnSend',       self.handle_send)
+    self.sock:hook('OnModeChange', self.handle_mode_change)
+    self.sock:hook('OnKick',       self.handle_kick)
     if flags.r then
-        self.sock:hook('OnRaw',     self.handle_raw)
+        self.sock:hook('OnRaw',    self.handle_raw)
     end
 
     self.stacks = {}
