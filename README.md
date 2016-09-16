@@ -1,2 +1,2 @@
 # twitch-pyramid-breaker
-Dependencies: LuaIRC
+Dependencies: LuaIRC, luasocket
